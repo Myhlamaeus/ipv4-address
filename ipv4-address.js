@@ -1,6 +1,19 @@
-class Ipv4Address extends Uint8Array {
+class Ipv4Address {
     constructor(iterable) {
-        super(4);
+        let arr = new Uint8Array(4);
+
+        for(let i = 0; i < 4; ++i) {
+            Object.defineProperty(this, i, {
+                get: function() {
+                    return arr[i];
+                },
+                set: function(val) {
+                    arr[i] = val;
+                },
+                enumerable: true,
+                configurable: true
+            });
+        }
 
         if(iterable) {
             let i = 0;
@@ -18,6 +31,10 @@ class Ipv4Address extends Uint8Array {
         return Array.prototype.map.call(this, function(ele) {
             return ele.toString(10);
         }).join(".");
+    }
+
+    get length() {
+        return 4;
     }
 }
 
