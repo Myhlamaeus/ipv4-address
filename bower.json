@@ -1,0 +1,23 @@
+{
+  "name": "ipv4-address",
+  "main": "ipv4-address.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ileri/ipv4-address",
+  "authors": [
+    "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
