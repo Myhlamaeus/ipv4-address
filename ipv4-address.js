@@ -36,6 +36,28 @@ class Ipv4Address {
     get length() {
         return 4;
     }
+
+    * keys() {
+        for(let i = 0; i < this.length; ++i) {
+            yield i;
+        }
+    }
+
+    * values() {
+        for(let key of this.keys()) {
+            yield this[key];
+        }
+    }
+
+    * entries() {
+        for(let key of this.keys()) {
+            yield [key, this[key]];
+        }
+    }
+
+    * [Symbol.iterator]() {
+        return this.values();
+    }
 }
 
 Ipv4Address.parse = function(str) {
