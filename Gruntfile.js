@@ -59,10 +59,42 @@ module.exports = function (grunt) {
                 },
                 "src": ["test/index.js"]
             }
+        },
+        "babel": {
+            "options": {
+                "sourceMap": true
+            },
+            "dist": {
+                "files": {
+                    "dist/cjs.js": "ipv4-address.js"
+                }
+            }
+        },
+        "browserify": {
+            "dist": {
+                "options": {
+                    "browserifyOptions": {
+                        "standalone": "Ipv4Address"
+                    }
+                },
+                "files": {
+                    "dist/browser.js": "dist/cjs.js"
+                }
+            }
+        },
+        "uglify": {
+            "dist": {
+                "files": {
+                    "dist/browser.min.js": "dist/browser.js"
+                }
+            }
         }
     });
 
     grunt.task.registerTask("test", function() {
         grunt.task.run("jshint:all", "jshint:test", "mochaTest");
     });
+
+    grunt.task.registerTask("build:cjs", ["babel:dist"]);
+    grunt.task.registerTask("build:browser", ["build:cjs", "browserify:dist", "uglify:dist"]);
 };
