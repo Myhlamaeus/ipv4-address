@@ -55,7 +55,7 @@ class Ipv4Address {
         }
     }
 
-    * [Symbol.iterator]() {
+    [Symbol.iterator]() {
         return this.values();
     }
 }
