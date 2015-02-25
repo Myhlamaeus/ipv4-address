@@ -1,7 +1,7 @@
 {
   "name": "ipv4-address",
   "version": "0.0.0",
-  "description": "ipv4-address\r =======",
+  "description": "ipv4-address",
   "main": "dist/cjs.js",
   "scripts": {
     "test": "grunt test",
