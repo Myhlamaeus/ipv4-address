@@ -101,9 +101,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.task.registerTask("test", function() {
-        grunt.task.run("jshint:all", "jshint:test", "mochaTest");
-    });
+    grunt.task.registerTask("test", ["jshint:all", "jshint:test", "mochaTest"]);
 
     grunt.task.registerTask("build:es6", ["uglify:dist"]);
     grunt.task.registerTask("build:cjs", ["babel:dist", "uglify:distCjs"]);
