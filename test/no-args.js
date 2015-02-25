@@ -1,7 +1,6 @@
 import Ipv4Address from "../ipv4-address";
 import assert from "assert";
 
-/* jshint node: true */
 /* global describe, it, beforeEach */
 
 describe("Ipv4Address()", function() {
