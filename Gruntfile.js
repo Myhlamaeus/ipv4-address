@@ -43,9 +43,6 @@ module.exports = function (grunt) {
                 "index.js"
             ],
             "test": {
-                "options": {
-                    "jshintrc": "test/.jshintrc"
-                },
                 "files": {
                     "src": ["test/{,*/}*.js"]
                 }
