@@ -1,28 +1,18 @@
-class Ipv4Address {
+import ArrayLikeObjectWrapper from "array-like-object-wrapper";
+
+class Ipv4Address extends ArrayLikeObjectWrapper {
     constructor(iterable) {
         let arr = new Uint8Array(4);
-
-        for(let i = 0; i < 4; ++i) {
-            Object.defineProperty(this, i, {
-                get: function() {
-                    return arr[i];
-                },
-                set: function(val) {
-                    arr[i] = val;
-                },
-                enumerable: true,
-                configurable: true
-            });
-        }
+        super(arr);
 
         if(iterable) {
             let i = 0;
 
             for(let val of iterable) {
-                if(i >= this.length) {
+                if(i >= arr.length) {
                     throw new RangeError("Ipv4Address: iterable is too long");
                 }
-                this[i++] = val >>> 0;
+                arr[i++] = val >>> 0;
             }
         }
     }
@@ -31,32 +21,6 @@ class Ipv4Address {
         return Array.prototype.map.call(this, function(ele) {
             return ele.toString(10);
         }).join(".");
-    }
-
-    get length() {
-        return 4;
-    }
-
-    * keys() {
-        for(let i = 0; i < this.length; ++i) {
-            yield i;
-        }
-    }
-
-    * values() {
-        for(let key of this.keys()) {
-            yield this[key];
-        }
-    }
-
-    * entries() {
-        for(let key of this.keys()) {
-            yield [key, this[key]];
-        }
-    }
-
-    [Symbol.iterator]() {
-        return this.values();
     }
 }
 
