@@ -75,4 +75,8 @@ Ipv4Address.parse = function(str) {
     }));
 };
 
+Ipv4Address.from = function(arrLikeOrIterable) {
+    return new this(Array.from(arrLikeOrIterable));
+};
+
 export default Ipv4Address;
