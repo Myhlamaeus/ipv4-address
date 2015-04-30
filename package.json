@@ -1,36 +1,36 @@
 {
   "name": "ipv4-address",
-  "version": "0.2.0",
   "description": "ipv4-address",
-  "main": "dist/ipv4-address.js",
-  "scripts": {
-    "test": "gulp test",
-    "prepublish": "gulp build:cjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ileri/ipv4-address.git"
-  },
-  "keywords": [
-    "ipv4 address",
-    "ipv4",
-    "ip",
-    "ip address"
-  ],
+  "version": "0.2.0",
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ileri/ipv4-address/issues"
   },
-  "homepage": "https://github.com/ileri/ipv4-address",
-    "devDependencies": {
+  "dependencies": {
+    "array-like-object-wrapper": "^0.1.0"
+  },
+  "devDependencies": {
     "babel": "^5.1.13",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
     "gulp-mocha": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2"
   },
-  "dependencies": {
-    "array-like-object-wrapper": "^0.1.0"
+  "homepage": "https://github.com/ileri/ipv4-address",
+  "keywords": [
+    "ip",
+    "ip address",
+    "ipv4",
+    "ipv4 address"
+  ],
+  "license": "GPL-3.0",
+  "main": "dist/ipv4-address.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ileri/ipv4-address.git"
+  },
+  "scripts": {
+    "prepublish": "gulp build:cjs",
+    "test": "gulp test"
   }
 }
