@@ -23,7 +23,7 @@
     "ipv4",
     "ipv4 address"
   ],
-  "license": "GPL-3.0",
+  "license": "MIT",
   "main": "dist/ipv4-address.js",
   "repository": {
     "type": "git",
