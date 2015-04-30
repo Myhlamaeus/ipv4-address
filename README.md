@@ -1,1 +1,1 @@
-# ipv4-address [![Build Status](https://travis-ci.org/ileri/ipv4-address.svg?branch=master)](https://travis-ci.org/ileri/ipv4-address)
+# ipv4-address [![Code Climate](https://codeclimate.com/github/ileri/ipv4-address/badges/gpa.svg)](https://codeclimate.com/github/ileri/ipv4-address) [![Build Status](https://travis-ci.org/ileri/ipv4-address.svg?branch=master)](https://travis-ci.org/ileri/ipv4-address) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
