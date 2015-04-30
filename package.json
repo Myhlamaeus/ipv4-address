@@ -17,7 +17,7 @@
     "ip",
     "ip address"
   ],
-  "author": "Malte-Maurice Dreyer <dreyer.maltem@gmail.com>",
+  "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ileri/ipv4-address/issues"
