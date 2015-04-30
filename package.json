@@ -1,7 +1,7 @@
 {
   "name": "ipv4-address",
   "description": "ipv4-address",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
   "bugs": {
     "url": "https://github.com/ileri/ipv4-address/issues"
