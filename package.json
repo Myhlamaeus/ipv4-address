@@ -30,7 +30,7 @@
     "url": "https://github.com/ileri/ipv4-address.git"
   },
   "scripts": {
-    "prepublish": "gulp build:cjs",
+    "prepublish": "gulp build",
     "test": "standard {test/,lib/,./}*.js && gulp test"
   }
 }
