@@ -60,6 +60,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@std/esm": "^0.18.0"
+    "@std/esm": "^0.18.0",
+    "fixed-length-arrays": "^0.1.1"
   }
 }
